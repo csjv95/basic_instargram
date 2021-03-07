@@ -1,0 +1,27 @@
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-bottom: 1px solid rgb(219, 219, 219);
+  margin-bottom: 4em;
+}
+
+.logo {
+  text-decoration: none;
+}
+
+.search {
+  padding: 0 0.2em;
+}
+
+.list {
+  display: flex;
+}
+
+.item {
+  margin-right: 0.2em;
+}
