@@ -17,7 +17,7 @@ const Header = (props) => {
       <BrowserRouter>
       <nav>
         <ul className={styles.list}>
-          <li className={styles.item}><Link exact to="/">home</Link></li>
+          <li className={styles.item}><Link exact to="/home">home</Link></li>
           <li className={styles.item}><NavLink exact to="/message">message</NavLink></li>
           <li className={styles.item}><NavLink exact to="/direction">direction</NavLink></li>
           <li className={styles.item}><NavLink exact to="/heart">heart</NavLink></li>
@@ -25,7 +25,11 @@ const Header = (props) => {
         </ul>
       </nav>
 
-      
+      <Switch>
+        <Route exact path="/home">
+          <Home />
+        </Route>
+      </Switch>
       </BrowserRouter>
 
       
