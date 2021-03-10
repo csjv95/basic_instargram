@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./main_top.module.css";
 
-const MainTop = ({ videoId }) => {
+const MainTop = ({ userName }) => {
   return (
     <section className={styles.container}>
       <img
@@ -12,7 +12,7 @@ const MainTop = ({ videoId }) => {
 
       <div className={styles.information}>
         <div className={styles.top}>
-          <h2 className={styles.my}>{videoId}</h2>
+          <h2 className={styles.my}>{userName}</h2>
           <button>프로필 편집</button>
           <button>서클</button>
         </div>
@@ -28,7 +28,7 @@ const MainTop = ({ videoId }) => {
           </li>
         </ul>
         <div className={styles.bottom}>
-          <h3>{videoId}</h3>
+          <h3>{userName}</h3>
           <span>카페</span>
           <p>
             수원 광교 이쁜카페<br/>

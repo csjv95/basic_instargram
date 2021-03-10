@@ -4,11 +4,11 @@ import SubNav from '../sub_nav/sub_nav';
 import styles from './main.module.css';
 import MainTop from './main_top/main_top';
 
-const Main = ({videoId}) => {
+const Main = ({userName}) => {
   return(
     <main className={styles.main}>
     <section className={styles.top}>
-      <MainTop videoId={videoId} />
+      <MainTop userName={userName} />
     </section>
     <SubNav />
     <section className={styles.botom}>

@@ -1,6 +1,5 @@
 import React from "react";
 import { BrowserRouter, Link, NavLink, Route, Switch } from "react-router-dom";
-import App from "../../app";
 import Home from "../home/home";
 import styles from "./header.module.css";
 

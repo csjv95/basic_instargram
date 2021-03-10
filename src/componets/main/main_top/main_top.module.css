@@ -20,7 +20,7 @@
   align-items: center;
 }
 
-.top>:nth-child(n) {
+.top > :nth-child(n) {
   margin-right: 2em;
 }
 
@@ -35,11 +35,11 @@
   align-items: center;
 }
 
-.midle>:nth-child(n) {
+.midle > :nth-child(n) {
   margin-right: 2em;
 }
 
-.bottom>:nth-child(n) {
+.bottom > :nth-child(n) {
   margin: 0;
   font-size: 0.8em;
 }

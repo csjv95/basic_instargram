@@ -4,20 +4,26 @@ import Header from "./componets/header/header";
 import Main from "./componets/main/main";
 import styles from './app.module.css';
 import { useEffect, useState } from "react";
-import axios from "axios";
 
-function App({getUserName}) {
-  const [videoId,setVideoId] = useState([]);
 
+function App({getUserData}) {
+  const [userName,setUserName] = useState([]);
+  const [userVideoId,setUserVideoId] =useState([]);
   
   useEffect(()=> {
-    getUserName.userName().then(item => setVideoId(item))
-  },[getUserName])
+    getUserData.userName().then(item => setUserName(item))
+  },[getUserData])
+
+  useEffect(()=> {
+    getUserData.userVideoId().then(item => console.log(item))
+  },[getUserData])
+
+ 
 
   return (
     <div className={styles.container}>
       <Header />
-      <Main videoId={videoId}/>
+      <Main userName={userName}/>
       <Footer />
     </div>
   );
