@@ -1,11 +1,11 @@
 .container {
   width: 100%;
-  padding: 4em;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-.img {
+.profile_img {
   height: 100%;
   border-radius: 50%;
 }
@@ -14,13 +14,32 @@
   padding-left: 2em;
 }
 
-.title {
+.top {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
 }
 
+.top>:nth-child(n) {
+  margin-right: 2em;
+}
 
-.list {
+.my {
+  margin: 0;
+  font-size: 1.4em;
+}
+
+.midle {
   display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.midle>:nth-child(n) {
+  margin-right: 2em;
+}
+
+.bottom>:nth-child(n) {
+  margin: 0;
+  font-size: 0.8em;
 }

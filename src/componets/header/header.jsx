@@ -17,16 +17,16 @@ const Header = (props) => {
       <BrowserRouter>
       <nav>
         <ul className={styles.list}>
-          <li className={styles.item}><Link exact to="/home">home</Link></li>
-          <li className={styles.item}><NavLink exact to="/message">message</NavLink></li>
-          <li className={styles.item}><NavLink exact to="/direction">direction</NavLink></li>
-          <li className={styles.item}><NavLink exact to="/heart">heart</NavLink></li>
+          <li className={styles.item}><Link exact to="/home">홈</Link></li>
+          <li className={styles.item}><NavLink exact to="/message">DM</NavLink></li>
+          <li className={styles.item}><NavLink exact to="/direction">탐색</NavLink></li>
+          <li className={styles.item}><NavLink exact to="/heart">좋아요</NavLink></li>
           <li className={styles.item}><NavLink exact to="/my">my</NavLink></li>
         </ul>
       </nav>
 
-      <Switch>
-        <Route exact path="/home">
+      <Switch >
+        <Route path="/home">
           <Home />
         </Route>
       </Switch>

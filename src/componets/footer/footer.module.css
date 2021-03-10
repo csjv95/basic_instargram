@@ -1,0 +1,20 @@
+footer {
+  margin: 0 auto;
+}
+
+.info_company,
+.copy_right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info_company>:nth-child(n) {
+  padding-right: 1em;
+  font-size: small;
+}
+
+.copy_right>:nth-child(n) {
+  padding-right: 1em;
+  font-size: small;
+}

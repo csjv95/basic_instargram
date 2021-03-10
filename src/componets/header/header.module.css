@@ -22,6 +22,10 @@
   display: flex;
 }
 
+.list>:nth-child(n) {
+  margin-right: 1em;
+}
+
 .item {
   margin-right: 0.2em;
 }
