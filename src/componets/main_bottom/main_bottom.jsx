@@ -1,12 +1,11 @@
 import React from "react";
+import MediaDetail from "../media_detail/media_detail";
 import styles from './main_bottom.module.css';
 
-const MainBottom = (props) => {
+const MainBottom = ({userMedia}) => {
   return (
     <ul className={styles.list}>
-      <li className={styles.item}><img src="" alt="사진"/></li>
-      <li className={styles.item}><img src="" alt="사진"/></li>
-      <li className={styles.item}><img src="" alt="사진"/></li>
+      {userMedia.map(media => <MediaDetail key={media.id} media={media}/>)}
     </ul>
   );
 };
