@@ -4,7 +4,7 @@
   border-top: 1px solid rgb(219, 219, 219);
 }
 
-.list>:nth-child(n):hover {
+.list>:nth-child(n):active {
   border-top: 1px solid black;
   cursor: pointer;
 }

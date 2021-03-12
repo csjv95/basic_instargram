@@ -5,16 +5,16 @@ const Footer = ({ getUser }) => {
   return (
     <footer>
       <ul className={styles.info_company}>
-        <li>소개</li>
-        <li>블로그</li>
-        <li>채용 정보</li>
-        <li>도움말</li>
-        <li>API</li>
-        <li>개인정보처리방침</li>
-        <li>약관</li>
-        <li>인기 계정</li>
-        <li>해시태그</li>
-        <li>위치</li>
+        <li><button>소개</button></li>
+        <li><button>블로그</button></li>
+        <li><button>채용정보</button> </li>
+        <li><button>도움말</button></li>
+        <li><button>API</button></li>
+        <li><button>개인정보처리방침</button></li>
+        <li><button>약관</button></li>
+        <li><button>인기계정</button> </li>
+        <li><button>해시태그</button></li>
+        <li><button>위치</button></li>
       </ul>
 
       <ul className={styles.copy_right}>

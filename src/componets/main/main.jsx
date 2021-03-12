@@ -1,5 +1,5 @@
 import React from 'react';
-import MainBottom from '../main_bottom/main_bottom';
+import SubRouter from '../../router/sub_router';
 import SubNav from '../sub_nav/sub_nav';
 import styles from './main.module.css';
 import MainTop from './main_top/main_top';
@@ -12,7 +12,7 @@ const Main = ({userName, userMedia}) => {
     </section>
     <SubNav />
     <section className={styles.botom}>
-      <MainBottom userMedia={userMedia} />
+      <SubRouter userMedia={userMedia} />
     </section>
     </main>
   )

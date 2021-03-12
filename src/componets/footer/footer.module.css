@@ -2,6 +2,13 @@ footer {
   margin: 0 auto;
 }
 
+button{
+  background-color: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
 .info_company,
 .copy_right {
   display: flex;
@@ -18,3 +25,4 @@ footer {
   padding-right: 1em;
   font-size: small;
 }
+

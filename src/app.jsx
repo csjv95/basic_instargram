@@ -1,9 +1,9 @@
 import "./app.module.css";
 import Footer from "./componets/footer/footer";
 import Header from "./componets/header/header";
-import Main from "./componets/main/main";
 import styles from "./app.module.css";
 import { useEffect, useState } from "react";
+import MainRouter from "./router/main_router";
 
 function App({ getUserData }) {
   const [userName, setUserName] = useState([]);
@@ -21,7 +21,7 @@ function App({ getUserData }) {
   return (
     <div className={styles.container}>
       <Header />
-      <Main userName={userName} userMedia={userMedia}/>
+      <MainRouter userName={userName} userMedia={userMedia}/>
       <Footer />
     </div>
   );
